@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  &-item {
+    box-shadow: 0 0 8px 4px #ccc;
+    transition: all 0.3s ease;
+  }
+  &-img {
+    vertical-align: top;
+    width: 100%;
+  }
+  &-content {
+    padding: 30px;
+  }
+  &-cat {
+    font-size: 12px;
+    line-height: 20.4px;
+    margin-bottom: 20px;
+  }
+  &-text {
+    font-size: 14.4px;
+    line-height: 24.48px;
+    margin-bottom: 33px;
+  }
+  &-date {
+    font-size: 12px;
+    line-height: 20.4px;
+    text-align: right;
+  }
+  @media screen and (max-width: 600px) {
+    &-content {
+      padding: 16px;
+    }
+  }
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}

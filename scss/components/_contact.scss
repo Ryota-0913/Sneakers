@@ -1,0 +1,77 @@
+.contact {
+  background: #121212;
+  color: #fff;
+  padding: 50px 0;
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 16px;
+  }
+  &-info {
+    box-sizing: border-box;
+    width: 45%;
+  }
+  &-text {
+    font-size: 14.4px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  &-form {
+    box-sizing: border-box;
+    width: 45%;
+    &__title {
+      font-size: 14.4px;
+      line-height: 21px;
+      margin-bottom: 1px;
+    }
+    &__text {
+      & input,& textarea {
+        border: 1px solid #707070;
+        margin-bottom: 20px;
+        padding: 10px;
+        resize: none;
+        width: 100%;
+      }
+      & input {
+        height: 44px;
+      }
+      & textarea {
+        height: 68px;
+      }
+    }
+    &__button {
+      font-size: 14.4px;
+      line-height: 21px;
+      & input {
+        background: #121212;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-bottom: 0;
+        padding: 12px 0;
+        width: 200px;
+        &:hover {
+          background-color: #fff;
+          color: #202020;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 80px 0;
+    &-box {
+      flex-direction: column;
+    }
+    &-info,&-form {
+      width: 100%;
+    }
+    &-form {
+      &_button {
+        & input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
